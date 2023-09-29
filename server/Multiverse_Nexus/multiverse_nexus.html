@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Multiverse Nexus</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="multiverse_nexus.css">
+
+  <link rel="stylesheet" type="text/css" href="registerLogin.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand color_text_yellow" href="#">MULTIVERSAL NEXUS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Multiverse Nexus <span
+                class="sr-only">(Official)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="accountBtn" href="#">Account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other Multiverses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Popular</a></li>
+              <li><a class="dropdown-item" href="#">New</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Collega il tuo file CSS per lo stile della finestra modale -->
+<!--   <link rel="stylesheet" href="registerLogin.css"> -->
+  
+<!-- La finestra modale per il primo popup -->
+<div id="accountModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Benvenuto!</h2>
+      <button id="loginBtn">Accedi</button>
+      <button id="registerBtn">Registrati</button>
+  </div>
+</div>
+
+<!-- La finestra modale per il secondo popup di registrazione -->
+<div id="registrationModal" class="modal">
+  <div class="modal-content">
+      <span id="closeRegistration" class="close">&times;</span>
+      <h2>Registrazione</h2>
+      <!-- Inserisci i campi di input per la registrazione qui -->
+      <form action="register.php" method="post">
+          <label for="username">Nome utente:</label>
+          <input type="text" id="username" name="username" required><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <input type="submit" value="Registrati">
+      </form>
+  </div>
+</div>
+
+<!-- La finestra modale per il secondo popup di login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+      <span id="closeLogin" class="close">&times;</span>
+      <h2>Login</h2>
+      <!-- Inserisci i campi di input per il login qui -->
+      <form action="login.php" method="post">
+          <label for="username">Nome utente o Email:</label>
+          <input type="text" id="username" name="username" required><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+
+          <input type="submit" value="Accedi">
+      </form>
+  </div>
+</div>
+
+
+
+
+  <div id="zoom-container">
+    <div id="stars"></div>
+
+    <div id="popup1" class="popup">
+      <span class="close-popup" style="float: right; cursor: pointer;">&times;</span>
+      <h2 class="color_text_yellow">Popup 1</h2>
+      <p>Contenuto del primo popup.</p>
+    </div>
+
+    <div id="popup2" class="popup">
+      <span class="close-popup" style="float: right; cursor: pointer;">&times;</span>
+      <h2 class="color_text_yellow">Popup 2</h2>
+      <p>Contenuto del secondo popup.</p>
+    </div>
+
+    <div id="popup3" class="popup">
+      <span class="close-popup" style="float: right; cursor: pointer;">&times;</span>
+      <h2 class="color_text_yellow">Popup 3</h2>
+      <p>Contenuto del 3 popup.</p>
+    </div>
+
+    <div id="popup4" class="popup">
+      <span class="close-popup" style="float: right; cursor: pointer;">&times;</span>
+      <h2 class="color_text_yellow">Popup 4</h2>
+      <p>Contenuto del 4 popup.</p>
+    </div>
+
+
+    <div id="popup5" class="popup">
+      <span class="close-popup" style="float: right; cursor: pointer;">&times;</span>
+      <h2 class="color_text_yellow">Popup 5</h2>
+      <p>Contenuto del 5 popup.</p>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/panzoom@4.1.0/dist/panzoom.min.js"></script>
+  <script src="multiverse_nexus.js"></script>
+  <script src="registerLogin.js"></script>
+</body>
+
+</html>

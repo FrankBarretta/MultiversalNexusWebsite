@@ -1,0 +1,75 @@
+* {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  padding-top: 70px; /* Space for the navbar */
+  background-color: black;
+  overflow: hidden;  /* No scroll bars */
+}
+
+:root {
+  --main-color: #1364AC;
+  --accent-color: #F7DF09;
+}
+
+.navbar {
+  z-index: 9999; /* Ensure the navbar is on top of other elements */
+}
+
+.color_text_yellow {
+  color: var(--accent-color);
+}
+
+#zoom-container {
+  position: relative;
+  height: 100vh;
+  transition: transform 0.2s;
+  cursor: grab;
+}
+
+#stars {
+  position: relative;
+  width: 200%;
+  height: 200%;
+  transform-origin: top left;
+  transition: transform 0.2s;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.star::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5); /* Colore e opacità della luce sfocata */
+  filter: blur(8px); /* Intensità della sfocatura */
+}
+
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: grey;
+  color: black;
+  border-radius: 5px;
+  display: none;
+  pointer-events: none;
+}
+
+.active-popup {
+  display: block;
+}
+

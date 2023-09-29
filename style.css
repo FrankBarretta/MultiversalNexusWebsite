@@ -1,0 +1,111 @@
+* {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+
+:root {
+  --main-color: #1364AC;
+  --accent-color: #F7DF09;
+}
+
+h1 {
+  color: var(--accent-color);
+  text-shadow: 0 0 10px rgb(245, 176, 57);
+}
+
+p {
+  color: var(--main-color);
+}
+
+.container_background {
+  background: url('media/bg-home-alpha.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  transition: transform 5s ease-in-out;
+}
+
+
+.bg_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding-top: 15vh;
+  padding-left: 2vh;
+}
+
+.btn-accent {
+  transition: 0.4s;
+}
+
+.btn-accent:hover {
+  letter-spacing: 4px;
+}
+
+
+
+
+
+/* Stili per il testo responsive */
+
+@media (min-width: 280px) { /* Schermi più grandi di 576px (col-sm) */
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;}
+}
+
+@media (min-width: 390px) { /* Schermi più grandi di 576px (col-sm) */
+  h1 {
+    font-size: 19px;
+  }
+
+  p {
+    font-size: 15px;}
+}
+
+@media (min-width: 412px) { /* Schermi più grandi di 576px (col-sm) */
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;}
+}
+
+@media (min-width: 540px) { /* Schermi più grandi di 576px (col-sm) */
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;}
+}
+
+@media (min-width: 768px) { /* Schermi più grandi di 768px (col-md) */
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) { /* Schermi più grandi di 992px (col-lg) */
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) { /* Schermi più grandi di 1200px (col-xl) */
+  h1 {
+    font-size: 40px;
+  }
+}
