@@ -1,2 +1,2 @@
 # MultiversusNexusWebsite
-La base di un sito web da me creato su un esperienza interattiva online
+La base di un sito web da me creato per un esperienza interattiva online
